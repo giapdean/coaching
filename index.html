@@ -600,8 +600,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            once: true,
-            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: false,          // Cho phép chạy lại khi scroll
+            mirror: true,         // Animation khi scroll lên
+            offset: 0,            // Trigger ngay khi vào viewport
+            anchorPlacement: 'top-bottom',
         });
 
         // --- XỬ LÝ FORM GỬI ĐI GOOGLE SHEET & WEBHOOK ---
